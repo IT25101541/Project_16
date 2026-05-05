@@ -1,0 +1,6 @@
+com\yourteam\grocerymanagement\model\User.class
+com\yourteam\grocerymanagement\GroceryManagementApplication.class
+com\yourteam\grocerymanagement\ServletInitializer.class
+com\yourteam\grocerymanagement\servlet\UserController.class
+com\yourteam\grocerymanagement\service\UserService.class
+com\yourteam\grocerymanagement\servlet\HomeController.class
