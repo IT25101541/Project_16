@@ -1,2 +1,0 @@
-USR9AE18403|user123|user123|user123@gmail.com|CUSTOMER|0712345678|false
-USR9A06126E|atchayan|19261926|atchayanindrakumar@gmail.com|CUSTOMER|0757228386|false
