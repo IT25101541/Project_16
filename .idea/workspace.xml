@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd859728-4b45-44ad-a406-6dc44cef9b8f" name="Changes" comment="" />
+    <list default="true" id="cd859728-4b45-44ad-a406-6dc44cef9b8f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yourteam/grocerymanagement/servlet/AdminServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/orders.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bill.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/order-history.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,8 +57,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Bhagya Idumini\Desktop\OOP Project\src\main\java\com\yourteam\grocerymanagement\service" />
-      <recent name="C:\Users\Bhagya Idumini\Desktop\OOP Project\src\main\java\com\yourteam\grocerymanagement\model" />
+      <recent name="C:\Users\Bhagya Idumini\Desktop\OOP Project\src\main\resources" />
+      <recent name="C:\Users\Bhagya Idumini\Desktop\OOP Project\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\Bhagya Idumini\Desktop\OOP Project\src\main\webapp\WEB-INF\views\admin" />
+      <recent name="C:\Users\Bhagya Idumini\Desktop\OOP Project\src\main\webapp\WEB-INF\views" />
+      <recent name="C:\Users\Bhagya Idumini\Desktop\OOP Project\src\main\java\com\yourteam\grocerymanagement\servlet" />
     </key>
   </component>
   <component name="SharedIndexes">
