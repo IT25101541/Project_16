@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cd859728-4b45-44ad-a406-6dc44cef9b8f" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/yourteam/grocerymanagement/servlet/AdminServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/orders.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bill.jsp" afterDir="false" />
