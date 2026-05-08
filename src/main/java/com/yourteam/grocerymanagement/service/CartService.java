@@ -1,11 +1,10 @@
-package service;
+package com.yourteam.grocerymanagement.service;
 
 import com.yourteam.grocerymanagement.model.Cart;
 import com.yourteam.grocerymanagement.model.CartItem;
 import com.yourteam.grocerymanagement.util.FileHandler;
 import com.yourteam.grocerymanagement.util.IdGenerator;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**

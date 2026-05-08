@@ -1,4 +1,4 @@
-package model;
+package com.yourteam.grocerymanagement.model;
 
 /**
  * CartItem - Encapsulates product reference and quantity in a cart.

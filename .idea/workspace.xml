@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32a192b3-e9a3-4441-94e2-8f8c0dd5f34d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/sidebar-close.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/sidebar.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/navbar.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yourteam/grocerymanagement/ServletInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yourteam/grocerymanagement/servlet/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/orders.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/products.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/users.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yourteam/grocerymanagement/model/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yourteam/grocerymanagement/model/CartItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yourteam/grocerymanagement/service/CartService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,14 +47,17 @@
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;feature/cart-management&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\insil\OneDrive\Desktop\oop\src\main\webapp\WEB-INF\views\admin" />
+      <recent name="C:\Users\insil\OneDrive\Desktop\oop\src\main\webapp\WEB-INF\views" />
       <recent name="C:\Users\insil\OneDrive\Desktop\oop\src\main\java\com\yourteam\grocerymanagement\servlet" />
-      <recent name="C:\Users\insil\OneDrive\Desktop\oop\src\main\java\service" />
-      <recent name="C:\Users\insil\OneDrive\Desktop\oop\src\main\java\model" />
+      <recent name="C:\Users\insil\OneDrive\Desktop\oop\src\main\java\com\yourteam\grocerymanagement\service" />
+      <recent name="C:\Users\insil\OneDrive\Desktop\oop\src\main\java\com\yourteam\grocerymanagement\model" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -76,6 +79,11 @@
       <workItem from="1777645601184" duration="328000" />
       <workItem from="1777910612458" duration="1486000" />
       <workItem from="1777915273632" duration="1623000" />
+      <workItem from="1777968468437" duration="37000" />
+      <workItem from="1778000465191" duration="605000" />
+      <workItem from="1778037743878" duration="10000" />
+      <workItem from="1778205434502" duration="880000" />
+      <workItem from="1778220503694" duration="1448000" />
     </task>
     <servers />
   </component>
