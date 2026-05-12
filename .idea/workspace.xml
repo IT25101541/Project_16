@@ -4,16 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7fa9e1e-d8a3-4e02-bda9-86807589477c" name="Changes" comment="" />
+    <list default="true" id="96677aa0-62de-4828-a03c-9fd6f21a4328" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/grocerymanagement/GroceryManagementApplicationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
-  <component name="ProjectId" id="3DcrigPijeFIxWaRFT1kAyF8Av6" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+    &quot;associatedIndex&quot;: 0
+    }</component>
+  <component name="ProjectId" id="3DP6rLUCcr6q9rmA1rVjQZvj1Lb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -22,21 +36,12 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Bhagya Idumini\Desktop\OOP Project New\grocery-management\src\main\webapp\WEB-INF\views\admin" />
-      <recent name="C:\Users\Bhagya Idumini\Desktop\OOP Project New\grocery-management\src\main\webapp\WEB-INF\views" />
-      <recent name="C:\Users\Bhagya Idumini\Desktop\OOP Project New\grocery-management\src\main\resources" />
-      <recent name="C:\Users\Bhagya Idumini\Desktop\OOP Project New\grocery-management\src\main\java\com\yourteam\grocerymanagement\servlet" />
-      <recent name="C:\Users\Bhagya Idumini\Desktop\OOP Project New\grocery-management\src\main\java\com\yourteam\grocerymanagement\service" />
-    </key>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -46,12 +51,16 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f7fa9e1e-d8a3-4e02-bda9-86807589477c" name="Changes" comment="" />
-      <created>1778592337076</created>
+      <changelist id="96677aa0-62de-4828-a03c-9fd6f21a4328" name="Changes" comment="" />
+      <created>1778171556549</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1778592337076</updated>
+      <updated>1778171556549</updated>
     </task>
     <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
