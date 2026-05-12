@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32a192b3-e9a3-4441-94e2-8f8c0dd5f34d" name="Changes" comment="">
+    <list default="true" id="96677aa0-62de-4828-a03c-9fd6f21a4328" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/sidebar-close.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/sidebar.jsp" afterDir="false" />
@@ -17,6 +17,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yourteam/grocerymanagement/model/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yourteam/grocerymanagement/model/CartItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yourteam/grocerymanagement/service/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,78 +29,43 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0,
-  &quot;fromUser&quot;: false
-}</component>
-  <component name="ProjectId" id="3D7uPCG3mb75QfomZjyY4DWjegx" />
+    &quot;associatedIndex&quot;: 0
+    }</component>
+  <component name="ProjectId" id="3DP6rLUCcr6q9rmA1rVjQZvj1Lb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/cart-management&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/cart-management",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\insil\OneDrive\Desktop\oop\src\main\resources" />
-      <recent name="C:\Users\insil\OneDrive\Desktop\oop\src\main\webapp\WEB-INF\views\admin" />
-      <recent name="C:\Users\insil\OneDrive\Desktop\oop\src\main\webapp\WEB-INF\views" />
-      <recent name="C:\Users\insil\OneDrive\Desktop\oop\src\main\java\com\yourteam\grocerymanagement\servlet" />
-      <recent name="C:\Users\insil\OneDrive\Desktop\oop\src\main\java\com\yourteam\grocerymanagement\service" />
-    </key>
-  </component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.32098.37" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
       </set>
     </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="32a192b3-e9a3-4441-94e2-8f8c0dd5f34d" name="Changes" comment="" />
-      <created>1777645406459</created>
+      <changelist id="96677aa0-62de-4828-a03c-9fd6f21a4328" name="Changes" comment="" />
+      <created>1778171556549</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1777645406459</updated>
-      <workItem from="1777645409868" duration="169000" />
-      <workItem from="1777645601184" duration="328000" />
-      <workItem from="1777910612458" duration="1486000" />
-      <workItem from="1777915273632" duration="1623000" />
-      <workItem from="1777968468437" duration="37000" />
-      <workItem from="1778000465191" duration="605000" />
-      <workItem from="1778037743878" duration="10000" />
-      <workItem from="1778205434502" duration="880000" />
-      <workItem from="1778220503694" duration="2106000" />
+      <updated>1778171556549</updated>
     </task>
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
-    <option featureType="dependencySupport" implementationName="maven-packaging:war" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
-    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
