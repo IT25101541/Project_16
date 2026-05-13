@@ -3,9 +3,9 @@ package com.yourteam.grocerymanagement.servlet;
 import com.yourteam.grocerymanagement.model.User;
 import com.yourteam.grocerymanagement.service.UserService;
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.*;
 import java.io.IOException;
 
 /**
