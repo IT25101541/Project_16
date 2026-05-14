@@ -92,26 +92,22 @@
       margin: 0 1.5rem 0.7rem;
     }
 
-    /* ── COLORFUL CATEGORY TILES with cart-bg image ── */
+    /* ── COLORFUL CATEGORY TILES — solid gradient only, no image ── */
     .category-card {
-      /* Cart supermarket image as tile background */
-      background-image: url('${pageContext.request.contextPath}/static/img/cart-bg.jpg') !important;
-      background-size: cover !important;
-      background-position: center !important;
       position: relative;
       border: none !important;
       overflow: hidden;
     }
 
-    /* Per-category colour overlay — each tile gets its own vivid tint */
-    .cat-fruits::before   { content:''; position:absolute; inset:0; background: linear-gradient(160deg, rgba(255,87,34,0.78), rgba(255,167,38,0.82)); border-radius: inherit; z-index:0; }
-    .cat-veg::before      { content:''; position:absolute; inset:0; background: linear-gradient(160deg, rgba(27,94,32,0.80), rgba(56,142,60,0.85)); border-radius: inherit; z-index:0; }
-    .cat-meat::before     { content:''; position:absolute; inset:0; background: linear-gradient(160deg, rgba(183,28,28,0.82), rgba(229,57,53,0.80)); border-radius: inherit; z-index:0; }
-    .cat-dairy::before    { content:''; position:absolute; inset:0; background: linear-gradient(160deg, rgba(1,87,155,0.80), rgba(3,155,229,0.82)); border-radius: inherit; z-index:0; }
-    .cat-bakery::before   { content:''; position:absolute; inset:0; background: linear-gradient(160deg, rgba(230,81,0,0.82), rgba(255,179,0,0.82)); border-radius: inherit; z-index:0; }
-    .cat-staple::before   { content:''; position:absolute; inset:0; background: linear-gradient(160deg, rgba(74,20,140,0.80), rgba(142,36,170,0.82)); border-radius: inherit; z-index:0; }
-    .cat-beverage::before { content:''; position:absolute; inset:0; background: linear-gradient(160deg, rgba(0,96,100,0.82), rgba(0,172,193,0.82)); border-radius: inherit; z-index:0; }
-    .cat-frozen::before   { content:''; position:absolute; inset:0; background: linear-gradient(160deg, rgba(21,101,192,0.82), rgba(100,181,246,0.80)); border-radius: inherit; z-index:0; }
+    /* Per-category solid gradient background */
+    .cat-fruits   { background: linear-gradient(160deg, #e65100, #ff8f00) !important; }
+    .cat-veg      { background: linear-gradient(160deg, #1b5e20, #388e3c) !important; }
+    .cat-meat     { background: linear-gradient(160deg, #b71c1c, #e53935) !important; }
+    .cat-dairy    { background: linear-gradient(160deg, #01579b, #039be5) !important; }
+    .cat-bakery   { background: linear-gradient(160deg, #e65100, #ffa000) !important; }
+    .cat-staple   { background: linear-gradient(160deg, #4a148c, #8e24aa) !important; }
+    .cat-beverage { background: linear-gradient(160deg, #006064, #00acc1) !important; }
+    .cat-frozen   { background: linear-gradient(160deg, #1565c0, #42a5f5) !important; }
 
     /* All inner content sits above the overlay */
     .category-card > * { position: relative; z-index: 1; }
