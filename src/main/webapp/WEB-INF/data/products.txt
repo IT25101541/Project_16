@@ -1,0 +1,28 @@
+PRDFD559EC4|Banana (Ambul)|Fruits|180.0|50|2026-05-15|2026-05-03|/static/img/banana.png
+PRD6170E0CE|Apple (Red)|Fruits|350.0|30|2026-06-07|2026-05-03|/static/img/apple.png
+PRD4FBE0017|Mango|Fruits|220.0|25|2026-05-15|2026-05-03|/static/img/mango.png
+PRDF1AD2BA4|Papaya|Fruits|150.0|20|2026-05-11|2026-05-03|/static/img/papaya.png
+PRD09A3CB09|Tomato|Vegetables|120.0|60|2026-05-15|2026-05-03|/static/img/tomato.png
+PRD219F0DD7|Carrot|Vegetables|90.0|45|2026-06-07|2026-05-03|/static/img/carrot.png
+PRD80650180|Leeks|Vegetables|80.0|40|2026-05-15|2026-05-03|/static/img/leeks.png
+PRD5AEBCE1E|Potato|Vegetables|110.0|80|2026-06-07|2026-05-03|/static/img/potato.png
+PRD17CA1345|Chicken Breast|Meat|950.0|20|2026-05-11|2026-05-03|/static/img/chicken.png
+PRDBE962C7E|Beef (500g)|Meat|1200.0|15|2026-05-11|2026-05-03|/static/img/beef.png
+PRD9D1B27E1|Fish (Salmon)|Meat|1500.0|10|2026-05-11|2026-05-03|/static/img/fish.png
+PRDF3058AAE|Milk (1L)|Dairy|220.0|40|2026-05-15|2026-05-03|/static/img/milk.png
+PRDD929144E|Curd (500g)|Dairy|180.0|30|2026-05-15|2026-05-03|/static/img/curd.png
+PRD60E5604A|Cheese (200g)|Dairy|450.0|20|2026-06-07|2026-05-03|/static/img/cheese.png
+PRDE769B06C|Butter (250g)|Dairy|390.0|25|2026-06-07|2026-05-03|/static/img/butter.png
+PRD4500AA59|White Bread|Bakery|95.0|30|2026-05-11|2026-05-03|/static/img/bread.png
+PRD2C500C2A|Croissant|Bakery|120.0|20|2026-05-11|2026-05-03|/static/img/croissant.png
+PRD7DA00788|Chocolate Cake|Bakery|850.0|10|2026-05-15|2026-05-03|/static/img/cake.png
+PRDC5053481|Basmati Rice (1kg)|Staple Grocery|280.0|100|2026-07-07|2026-05-03|/static/img/rice.png
+PRDDD69A925|Dhal (500g)|Staple Grocery|160.0|80|2026-07-07|2026-05-03|/static/img/dhal.png
+PRD494CD5C7|Sugar (1kg)|Staple Grocery|200.0|100|2026-07-07|2026-05-03|/static/img/sugar.png
+PRD119B594F|Coconut Oil (1L)|Staple Grocery|480.0|50|2026-07-07|2026-05-03|/static/img/oil.png
+PRDC31579B4|Coca-Cola (1.5L)|Beverage|290.0|60|2026-07-07|2026-05-03|/static/img/cola.png
+PRD4FFDA63F|Orange Juice (1L)|Beverage|320.0|40|2026-06-07|2026-05-03|/static/img/oj.png
+PRDBFBF4A58|Green Tea (25 bags)|Beverage|240.0|35|2026-07-07|2026-05-03|/static/img/tea.png
+PRDD901ACB8|Frozen Pizza|Frozen|650.0|15|2026-06-07|2026-05-03|/static/img/pizza.png
+PRD9A684E27|Ice Cream (1L)|Frozen|480.0|20|2026-07-07|2026-05-03|/static/img/icecream.png
+PRD259A3061|Frozen Peas (500g)|Frozen|195.0|25|2026-07-07|2026-05-03|/static/img/peas.png
