@@ -4,17 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96677aa0-62de-4828-a03c-9fd6f21a4328" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/grocerymanagement/GroceryManagementApplicationTests.java" afterDir="false" />
+    <list default="true" id="b8b745c9-7117-4adf-a7c7-ca66b2208407" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/grocery-management/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/src/main/java/com/yourteam/grocerymanagement/model/BeverageProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/src/main/java/com/yourteam/grocerymanagement/model/GroceryProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/src/main/java/com/yourteam/grocerymanagement/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/src/main/java/com/yourteam/grocerymanagement/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/src/main/java/com/yourteam/grocerymanagement/servlet/ServiceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/src/main/java/com/yourteam/grocerymanagement/util/DataPaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/src/main/java/com/yourteam/grocerymanagement/util/FileHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/src/main/java/com/yourteam/grocerymanagement/util/IdGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/src/main/webapp/WEB-INF/views/admin/product-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/src/main/webapp/WEB-INF/views/admin/products.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/src/main/webapp/WEB-INF/views/categories.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/src/main/webapp/WEB-INF/views/products.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/src/main/webapp/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/src/main/webapp/static/img/cart-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/src/main/webapp/static/img/grocery-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/src/main/webapp/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grocery-management/src/test/java/com/example/grocerymanagement/GroceryManagementApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,12 +38,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/grocery-management" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
+  &quot;associatedIndex&quot;: 1
 }</component>
-  <component name="ProjectId" id="3DP6rLUCcr6q9rmA1rVjQZvj1Lb" />
+  <component name="ProjectId" id="3DP99zqSgZo0WgqhSc2JKG10yiR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,12 +55,29 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/dahar/OneDrive/Desktop/Project-16/grocery-management/src/main/java/com/yourteam/grocerymanagement/util",
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dahar\OneDrive\Desktop\Project-16\grocery-management\src\main\java\com\yourteam\grocerymanagement\util" />
+      <recent name="C:\Users\dahar\OneDrive\Desktop\Project-16\grocery-management\src\main\resources" />
+      <recent name="C:\Users\dahar\OneDrive\Desktop\Project-16\grocery-management\src\main\java\com\yourteam\grocerymanagement\model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dahar\OneDrive\Desktop\Project-16\grocery-management\.idea" />
+      <recent name="C:\Users\dahar\OneDrive\Desktop\Project-16\.idea" />
+      <recent name="C:\Users\dahar\OneDrive\Desktop\Project-16\grocery-management\src\main\java\com\yourteam\grocerymanagement\model" />
+      <recent name="C:\Users\dahar\OneDrive\Desktop\Project-16\grocery-management\src\main\java\com\yourteam\grocerymanagement\service" />
+      <recent name="C:\Users\dahar\OneDrive\Desktop\Project-16\grocery-management\src\main\java\com\yourteam\grocerymanagement\servlet" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -51,11 +87,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="96677aa0-62de-4828-a03c-9fd6f21a4328" name="Changes" comment="" />
-      <created>1778171556549</created>
+      <changelist id="b8b745c9-7117-4adf-a7c7-ca66b2208407" name="Changes" comment="" />
+      <created>1778172690731</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1778171556549</updated>
+      <updated>1778172690731</updated>
     </task>
     <servers />
   </component>
