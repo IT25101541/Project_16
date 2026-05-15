@@ -1,5 +1,6 @@
 package com.yourteam.grocerymanagement.servlet;
 
+import com.yourteam.grocerymanagement.model.*;
 import com.yourteam.grocerymanagement.service.*;
 
 import javax.servlet.ServletException;
