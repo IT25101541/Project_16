@@ -3,16 +3,23 @@ package com.yourteam.grocerymanagement.servlet;
 import com.yourteam.grocerymanagement.service.*;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.*;
 import java.util.List;
 
 /**
  * AdminServlet – handles all admin panel operations.
- * Requires ADMIN role session attribute.
+ * MultipartConfig enables file upload for product images.
  */
 @WebServlet("/admin/*")
+@MultipartConfig(
+    fileSizeThreshold = 1024 * 1024,      // 1 MB
+    maxFileSize       = 5 * 1024 * 1024,  // 5 MB
+    maxRequestSize    = 10 * 1024 * 1024  // 10 MB
+)
 public class AdminServlet extends HttpServlet {
 
     @Override
@@ -32,16 +39,33 @@ public class AdminServlet extends HttpServlet {
                 break;
 
             // ── USER MANAGEMENT ──────────────────────────────────────────────
-            case "users":
-                req.setAttribute("users", ServiceFactory.userService(getServletContext()).getAllUsers());
+            case "users": {
+                String query = req.getParameter("search");
+                List<User> users;
+                if (query != null && !query.trim().isEmpty()) {
+                    // Search by name or email
+                    users = ServiceFactory.userService(getServletContext()).getAllUsers();
+                    String q = query.toLowerCase().trim();
+                    users.removeIf(u ->
+                        !u.getUsername().toLowerCase().contains(q) &&
+                        !u.getEmail().toLowerCase().contains(q) &&
+                        !u.getPhone().contains(q)
+                    );
+                    req.setAttribute("searchQuery", query);
+                } else {
+                    users = ServiceFactory.userService(getServletContext()).getAllUsers();
+                }
+                req.setAttribute("users", users);
                 req.getRequestDispatcher("/WEB-INF/views/admin/users.jsp").forward(req, resp);
                 break;
+            }
 
             // ── PRODUCT MANAGEMENT ───────────────────────────────────────────
             case "products":
                 req.setAttribute("products", ServiceFactory.productService(getServletContext()).getAllProducts());
                 req.getRequestDispatcher("/WEB-INF/views/admin/products.jsp").forward(req, resp);
                 break;
+
             case "product-edit": {
                 String pid = req.getParameter("id");
                 req.setAttribute("product", ServiceFactory.productService(getServletContext()).getProductById(pid));
@@ -69,6 +93,7 @@ public class AdminServlet extends HttpServlet {
                 req.setAttribute("clearanceItems", ServiceFactory.clearanceService(getServletContext()).getAllClearanceItems());
                 req.getRequestDispatcher("/WEB-INF/views/admin/clearance.jsp").forward(req, resp);
                 break;
+
             case "clearance-add":
                 req.setAttribute("products", ServiceFactory.productService(getServletContext()).getAllProducts());
                 req.getRequestDispatcher("/WEB-INF/views/admin/clearance-form.jsp").forward(req, resp);
@@ -92,7 +117,14 @@ public class AdminServlet extends HttpServlet {
         String action = getAction(req);
 
         switch (action) {
+
             // ── USER MANAGEMENT ──
+            case "search-users": {
+                String q = req.getParameter("search");
+                resp.sendRedirect(req.getContextPath() + "/admin/users?search=" +
+                        java.net.URLEncoder.encode(q != null ? q : "", "UTF-8"));
+                break;
+            }
             case "block-user":
                 ServiceFactory.userService(getServletContext()).blockUser(req.getParameter("userId"));
                 resp.sendRedirect(req.getContextPath() + "/admin/users");
@@ -106,21 +138,42 @@ public class AdminServlet extends HttpServlet {
                 resp.sendRedirect(req.getContextPath() + "/admin/users");
                 break;
 
-            // ── PRODUCT MANAGEMENT ──
+            // ── PRODUCT MANAGEMENT — with image upload ──
             case "save-product": {
                 ProductService ps = ServiceFactory.productService(getServletContext());
-                String pid = req.getParameter("productId");
-                String name = req.getParameter("name");
-                String cat  = req.getParameter("category");
-                double price = Double.parseDouble(req.getParameter("price"));
-                int stock    = Integer.parseInt(req.getParameter("stock"));
-                String expiry = req.getParameter("expiryDate");
-                String mfg    = req.getParameter("manufactureDate");
-                String img    = req.getParameter("imageUrl");
+                String pid           = req.getParameter("productId");
+                String name          = req.getParameter("name");
+                String cat           = req.getParameter("category");
+                double price         = Double.parseDouble(req.getParameter("price"));
+                int stock            = Integer.parseInt(req.getParameter("stock"));
+                String expiry        = req.getParameter("expiryDate");
+                String mfg           = req.getParameter("manufactureDate");
+                String imageUrl      = req.getParameter("imageUrl");
+
+                // Handle file upload
+                Part filePart = req.getPart("imageFile");
+                if (filePart != null && filePart.getSize() > 0) {
+                    String fileName = getFileName(filePart);
+                    if (fileName != null && !fileName.isEmpty()) {
+                        // Save to webapp/static/img/products/
+                        String uploadDir = getServletContext().getRealPath("/static/img/products");
+                        new File(uploadDir).mkdirs();
+                        String safeName = System.currentTimeMillis() + "_" + fileName.replaceAll("[^a-zA-Z0-9._-]", "_");
+                        String filePath = uploadDir + File.separator + safeName;
+                        try (InputStream in = filePart.getInputStream();
+                             OutputStream out = new FileOutputStream(filePath)) {
+                            byte[] buf = new byte[8192];
+                            int len;
+                            while ((len = in.read(buf)) > 0) out.write(buf, 0, len);
+                        }
+                        imageUrl = "/static/img/products/" + safeName;
+                    }
+                }
+
                 if (pid == null || pid.isEmpty()) {
-                    ps.addProduct(name, cat, price, stock, expiry, mfg, img);
+                    ps.addProduct(name, cat, price, stock, expiry, mfg, imageUrl != null ? imageUrl : "");
                 } else {
-                    ps.updateProduct(pid, name, cat, price, stock, expiry, mfg, img);
+                    ps.updateProduct(pid, name, cat, price, stock, expiry, mfg, imageUrl != null ? imageUrl : "");
                 }
                 resp.sendRedirect(req.getContextPath() + "/admin/products");
                 break;
@@ -165,19 +218,17 @@ public class AdminServlet extends HttpServlet {
                 StockClearanceService cs = ServiceFactory.clearanceService(getServletContext());
                 String clearanceId = req.getParameter("clearanceId");
                 if (clearanceId == null || clearanceId.isEmpty()) {
-                    // Create
-                    String productId   = req.getParameter("productId");
-                    String productName = req.getParameter("productName");
-                    String expiry      = req.getParameter("expiryDate");
-                    String mfg         = req.getParameter("manufactureDate");
-                    double origPrice   = Double.parseDouble(req.getParameter("originalPrice"));
-                    String stockCond   = req.getParameter("stockCondition");
-                    int stockQty       = Integer.parseInt(req.getParameter("stockQuantity"));
-                    cs.addClearanceRecord(productId, productName, expiry, mfg, origPrice, stockCond, stockQty);
+                    cs.addClearanceRecord(
+                        req.getParameter("productId"),
+                        req.getParameter("productName"),
+                        req.getParameter("expiryDate"),
+                        req.getParameter("manufactureDate"),
+                        Double.parseDouble(req.getParameter("originalPrice")),
+                        req.getParameter("stockCondition"),
+                        Integer.parseInt(req.getParameter("stockQuantity"))
+                    );
                 } else {
-                    // Update discount
-                    double discount = Double.parseDouble(req.getParameter("discountPercentage"));
-                    cs.updatePricing(clearanceId, discount);
+                    cs.updatePricing(clearanceId, Double.parseDouble(req.getParameter("discountPercentage")));
                 }
                 resp.sendRedirect(req.getContextPath() + "/admin/clearance");
                 break;
@@ -196,25 +247,23 @@ public class AdminServlet extends HttpServlet {
         }
     }
 
-    // ─── DASHBOARD ─────────────────────────────────────────────────────────────
-
+    // ── DASHBOARD ─────────────────────────────────────────────────────────────
     private void loadDashboard(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        OrderService os = ServiceFactory.orderService(getServletContext());
+        OrderService   os = ServiceFactory.orderService(getServletContext());
         ProductService ps = ServiceFactory.productService(getServletContext());
-        UserService us = ServiceFactory.userService(getServletContext());
+        UserService    us = ServiceFactory.userService(getServletContext());
 
-        req.setAttribute("totalRevenue",   os.getTotalRevenue());
-        req.setAttribute("totalOrders",    os.getTotalOrderCount());
-        req.setAttribute("totalUsers",     us.getAllUsers().size());
-        req.setAttribute("totalProducts",  ps.getAllProducts().size());
-        req.setAttribute("pendingOrders",  os.getPendingOrders().size());
-        req.setAttribute("allOrders",      os.getAllOrders());
+        req.setAttribute("totalRevenue",  os.getTotalRevenue());
+        req.setAttribute("totalOrders",   os.getTotalOrderCount());
+        req.setAttribute("totalUsers",    us.getAllUsers().size());
+        req.setAttribute("totalProducts", ps.getAllProducts().size());
+        req.setAttribute("pendingOrders", os.getPendingOrders().size());
+        req.setAttribute("allOrders",     os.getAllOrders());
         req.getRequestDispatcher("/WEB-INF/views/admin/dashboard.jsp").forward(req, resp);
     }
 
-    // ─── HELPERS ───────────────────────────────────────────────────────────────
-
+    // ── HELPERS ───────────────────────────────────────────────────────────────
     private String getAction(HttpServletRequest req) {
         String path = req.getPathInfo();
         if (path == null || path.equals("/")) return "dashboard";
@@ -224,5 +273,18 @@ public class AdminServlet extends HttpServlet {
     private boolean isAdmin(HttpServletRequest req) {
         HttpSession s = req.getSession(false);
         return s != null && "ADMIN".equals(s.getAttribute("role"));
+    }
+
+    private String getFileName(Part part) {
+        String cd = part.getHeader("content-disposition");
+        if (cd == null) return null;
+        for (String token : cd.split(";")) {
+            token = token.trim();
+            if (token.startsWith("filename")) {
+                String name = token.substring(token.indexOf('=') + 1).trim().replace("\"", "");
+                return Paths.get(name).getFileName().toString();
+            }
+        }
+        return null;
     }
 }
