@@ -1,7 +1,5 @@
 package com.yourteam.grocerymanagement.servlet;
 
-import com.yourteam.grocerymanagement.service.StockClearanceService;
-
 import java.time.LocalDate;
 
 /**
