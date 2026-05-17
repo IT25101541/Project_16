@@ -1,7 +1,6 @@
 package com.yourteam.grocerymanagement.service;
 
 import com.yourteam.grocerymanagement.model.StockClearance;
-import com.yourteam.grocerymanagement.util.FileHandler;
 import com.yourteam.grocerymanagement.util.IdGenerator;
 
 import java.time.LocalDate;
