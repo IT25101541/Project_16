@@ -1,5 +1,6 @@
 package com.yourteam.grocerymanagement.service;
 
+import com.yourteam.grocerymanagement.model.Product;
 import com.yourteam.grocerymanagement.util.FileHandler;
 import com.yourteam.grocerymanagement.util.IdGenerator;
 
