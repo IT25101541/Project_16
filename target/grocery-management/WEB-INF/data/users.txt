@@ -1,0 +1,6 @@
+USR001AA1|Kamal Perera|Kamal@1234|kamal@gmail.com|CUSTOMER|0771234567|false
+USR002BB2|Nimal Silva|Nimal@5678|nimal@gmail.com|CUSTOMER|0762345678|false
+USR003CC3|Sanduni Fernando|Sanduni@9012|sanduni@gmail.com|CUSTOMER|0753456789|false
+USR004DD4|Priya Rajapaksha|Priya@3456|priya@gmail.com|CUSTOMER|0744567890|false
+USR005EE5|Amara Bandara|Amara@7890|amara@gmail.com|CUSTOMER|0735678901|false
+USR5F73DBD5|Amshikan|19261926|amshikanindrakumar@gmail.com|CUSTOMER|0757228387|false
